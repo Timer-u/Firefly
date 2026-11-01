@@ -11,10 +11,10 @@ export const friendsPageConfig: FriendsPageConfig = {
 	description: "",
 
 	// 是否显示底部自定义内容（friends.mdx 中的内容）
-	showCustomContent: true,
+	showCustomContent: false,
 
 	// 是否显示评论区，需要先在commentConfig.ts启用评论系统
-	showComment: true,
+	showComment: false,
 
 	// 是否开启随机排序配置，如果开启，就会忽略权重，构建时进行一次随机排序
 	randomizeSort: false,
@@ -23,6 +23,15 @@ export const friendsPageConfig: FriendsPageConfig = {
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
+		title: "Yumene",
+		imgurl: "/assets/images/friends/yumene.webp",
+		desc: "Per Aspera Ad Astra",
+		siteurl: "https://blog.yumene.top",
+		tags: ["Blog"],
+		weight: 15, // 权重，数字越大排序越靠前
+		enabled: true, // 是否启用
+	},
+	{
 		title: "夏夜流萤",
 		imgurl:
 			"https://weavatar.com/avatar/d252655d40d6874417a720bad0a6c5f77f8f6a1fd2f882f8f338402dc37e4190?s=640",
@@ -30,7 +39,7 @@ export const friendsConfig: FriendLink[] = [
 		siteurl: "https://blog.cuteleaf.cn",
 		tags: ["Blog"],
 		weight: 10, // 权重，数字越大排序越靠前
-		enabled: true, // 是否启用
+		enabled: false, // 是否启用
 	},
 	{
 		title: "Firefly Docs",
@@ -39,7 +48,7 @@ export const friendsConfig: FriendLink[] = [
 		siteurl: "https://docs-firefly.cuteleaf.cn",
 		tags: ["Docs"],
 		weight: 9,
-		enabled: true,
+		enabled: false,
 	},
 	{
 		title: "Astro",
@@ -48,7 +57,7 @@ export const friendsConfig: FriendLink[] = [
 		siteurl: "https://github.com/withastro/astro",
 		tags: ["Framework"],
 		weight: 8,
-		enabled: true,
+		enabled: false,
 	},
 ];
 
