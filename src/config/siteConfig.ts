@@ -45,7 +45,7 @@ export const siteConfig: SiteConfig = {
 	title: "Timer's blog",
 
 	// 站点副标题
-	subtitle: "And the universe said I love you because you are love.",
+	subtitle: "And the universe said I love you because you are the love.",
 
 	// 站点 URL
 	site_url: "https://blog.timer-u.com",
